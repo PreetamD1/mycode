@@ -1,0 +1,11 @@
+expdp doa/doa directory=dp_dir dumpfile=doa23092025_0930am.dmp logfile=doa23092025_0930am.log tables=pgechallandetails,echallan
+
+
+expdp eddo/eddo1 directory=dp_dir dumpfile=eddo23092025_0130pm.dmp logfile=eddo23092025_0130pm.log tables=movement,salarysummary,salaryearnings,salarydeductions,ecsmonthly,ebills
+
+
+CREATE OR REPLACE DIRECTORY dp_dir AS 'C:\Users\DOA\Desktop\Budget';
+
+
+expdp eddo/eddo1 directory=dp_dir dumpfile=eddo23092025_0250pm.dmp logfile=eddo23092025_0250pm.log tables=ebills
+

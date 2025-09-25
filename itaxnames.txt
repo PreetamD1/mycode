@@ -1,0 +1,22 @@
+16234	AMITA ARJUN GAONKAR	33	ASSISTANT PROFESSOR	DRBPG7050P	F	25-03-25	0	N	AMITA ARJUN GAONKAR	0	Y		
+
+
+Deduction Head: 865800112010000 GOVT.SERVANTS SECT 192
+
+
+--select year,count ,detail,sum(gross) as gross,sum(net) as net, detaildesc from (
+--  select year,count(*) as count,substr(b.head,14,2) as detail,
+--sum(b.gross) as gross,sum(b.net) as net ,d.detaildesc from BCR2006.bills b,
+--BCR2006.detailbak d where year>2016 and  
+--b.voucherdt is null and b.diaryno<>0 and b.suspense <>'S' and 
+--substr(b.head,14,2)=d.detail group by year,substr(b.head,14,2),d.detaildesc
+--union
+--  select year,count(*)as count,substr(b.head,14,2) as detail,
+--sum(b.gross) as gross,sum(b.net) as net  ,d.detaildesc from eddo.ebills b,
+--bcr2006.detailbak d where year>2016 and  
+--b.voucherdt is null and b.doabrn<>0  and billstatus not in (15,6,5,8) and 
+--substr(b.head,14,2)=d.detail AND INSECTION NOT IN (98,99) group by year,substr(b.head,14,2),d.detaildesc) group by year,count,detail,detaildesc
+
+
+3518480	122025292319	27-06-25	23	49		3	6078	12		2	N
+3518502	122025292318	27-06-25	23	49		3	6078	12		2	N

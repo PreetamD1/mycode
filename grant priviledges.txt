@@ -1,0 +1,174 @@
+grant update on pfms.mother_sanction_details to eddo
+
+{
+  "Payments": [
+    {
+      "DebitAccount": {
+        "StateCd": "02",
+        "ControllerCd": "000",
+        "BenFileName": "0050PAYREQ250420231",
+        "NbOfTxs": "3",
+        "PmtInfId": "082024042500001",
+        "InitgPtyID": "ABCDEF",
+        "InitgPtyNm": "10125689",
+        "ClrSysMmbId": "RBI01245875",
+        "SignDate": "01/04/2023 14:15",
+     "SchCd": "ABCD",
+        "ReqdExecDt": "01/04/2023 14:15",
+        "TotalGrossAmt": "2000",
+        "TotalAmtForCSCalc": "1800",
+        "ComponentsH": {
+          "ComponentH": [
+            {
+              "ComponentCodeH": "ComponentCode1",
+              "ComponentAmtH": "650"
+            },
+            {
+              "ComponentCodeH": "ComponentCod2",
+              "ComponentAmtH": "650"
+            },
+            {
+              "ComponentCodeH": "ComponentCod3",
+              "ComponentAmtH": "500"
+            }
+          ]
+        },
+        "TotalAmtForCSCalcSC": "300",
+        "TotalAmtForCSCalcSCOC": "200",
+        "TotalAmtForCSCalcSCCC": "100",
+        "TotalAmtForCSCalcSCSAL": "0",
+        "TotalAmtForCSCalcST": "200",
+        "TotalAmtForCSCalcSTOC": "100",
+        "TotalAmtForCSCalcSTCC": "100",
+        "TotalAmtForCSCalcSTSAL": "0",
+        "TotalAmtForCSCalcOT": "1300",
+        "TotalAmtForCSCalcOTOC": "600",
+        "TotalAmtForCSCalcOTCC": "700",
+   "TotalAmtForCSCalcOTSAL": "0",
+        "TotalReissueAmt": "0",
+        "TotalNetAmt": "1000",
+        "TotalTopupAmt": "200",
+        "ExtraTagH1": "",
+        "ExtraTagH2": "",
+        "ExtraTagH3": "",
+        "IsDBT": "N",
+        "DBTMissionCode": "",
+        "PaymentMode": "A"
+      },
+      "CreditAccounts": {
+        "CreditAccount": [
+          {
+            "EndToEndId": "ABCDEFG1",
+            "GrossAmt": "350",
+            "AmtForCSCalc": "300",
+            "Components": {
+              "Component": [
+                {
+                  "ComponentCode": "ComponentCode1",
+                  "ComponentAmt": "100"
+                },
+                {
+                  "ComponentCode": "ComponentCod2",
+                  "ComponentAmt": "100"
+                },
+                {
+                  "ComponentCode": "ComponentCod3",
+                  "ComponentAmt": "100"
+                }
+              ]
+            },
+            "NetAmt": "200",
+    "TopupAmt": "50",
+            "CdtrAcctID": "002573",
+            "CdtrMmbId": "ICIC0256987",
+            "CdtrNm": "ABCD",
+            "ReIssueFlag": "N",
+	"OldEndToEndId": "",
+            "AadhaarNo": "",
+            "Ctgry": "SC",
+            "StateBudgetHead": "02345678912589",
+            "DistrictCd": "05",
+            "AgencyCode": "ABCI",
+	"AgencyName": "ABC India",
+	"TxId": "Unique Value1",
+            "ExtraTagD1": "",
+            "ExtraTagD2": "",
+            "ExtraTagD3": ""
+          },
+          {
+            "EndToEndId": "ABCDEFG2",
+            "GrossAmt": "150",
+            "AmtForCSCalc": "100",
+            "Components": {
+              "Component": [
+                {
+                  "ComponentCode": "ComponentCode1",
+                  "ComponentAmt": "50"
+                },
+                {
+                  "ComponentCode": "ComponentCod2",
+                  "ComponentAmt": "50"
+                },
+                    ]
+            },
+            "NetAmt": "150",
+            "TopupAmt": "50",
+            "CdtrAcctID": "002575",
+            "CdtrMmbId": "ICIC0256987",
+            "CdtrNm": "ABCDE",
+            "ReIssueFlag": "N",
+	"OldEndToEndId": "",
+            "AadhaarNo": "",
+            "Ctgry": "ST",
+            "StateBudgetHead": "02345678912589",
+            "DistrictCd": "05",
+            "AgencyCode": "ABCII",
+	"AgencyName": "ABC India II",
+	"TxId": "Unique Value2",
+            "ExtraTagD1": "",
+            "ExtraTagD2": "",
+            "ExtraTagD3": ""
+          },
+          {
+            "EndToEndId": "ABCDEFG3",
+            "GrossAmt": "1500",
+            "AmtForCSCalc": "1400",
+            "Components": {
+              "Component": [
+                {
+          "ComponentCode": "ComponentCode1",
+                  "ComponentAmt": "500"
+                },
+                {
+                  "ComponentCode": "ComponentCod2",
+                  "ComponentAmt": "500"
+                },
+                {
+                  "ComponentCode": "ComponentCod3",
+                  "ComponentAmt": "400"
+                }
+              ]
+            },
+            "NetAmt": "900",
+            "TopupAmt": "100",
+            "CdtrAcctID": "002523",
+           "CdtrMmbId": "ICIC0256957",
+            "CdtrNm": "ABCDEF",
+            "ReIssueFlag": "Y",
+	"OldEndToEndId": "ABCDEFG",
+            "AadhaarNo": "",
+            "Ctgry": "OT",
+            "StateBudgetHead": "02345678912589",
+            "DistrictCd": "05",
+            "AgencyCode": "123",
+            "AgencyName": "XYZ Co",
+	"TxId": "Unique Value3",
+            "ExtraTagD1": "",
+            "ExtraTagD2": "",
+            "ExtraTagD3": ""
+          }
+        ]
+      }
+    }
+  ]
+}
